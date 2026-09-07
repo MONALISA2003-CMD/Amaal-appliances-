@@ -42,3 +42,16 @@ The current implementation adds five refrigerator SKUs where the exact model ide
 - LG GL-C252SLBB warranty wording was corrected to reflect the manufacturer-published regional coverage rather than calling a local observation a warranty.
 - Samsung RT31CG5421S9UT warranty wording was corrected to distinguish the manufacturer compressor warranty from market-specific product coverage.
 - The refrigerator family remains intentionally open. More LG, Samsung, TCL, Midea, Roch, ADH and Beko models must be added only after exact-model image/specification/price verification.
+
+## Additional verified continuation — 7 September 2026
+
+### LG GN-B312PXGB
+- Exact model: GN-B312PXGB.
+- LG East Africa identifies it as a 315L top-freezer refrigerator with Smart Inverter Compressor, LinearCooling, DoorCooling+ and Multi Air Flow.
+- LG's product page lists 246L refrigerator storage, 340L total volume, 600 × 1640 × 710 mm product dimensions and 57kg product weight.
+- Uganda Official Store listing observed at UGX 2,315,000 and supplied a direct exact-model product image.
+- The implementation uses the clean direct product image from that exact-model Uganda listing and records the LG East Africa page as the OEM source.
+- Source: https://www.lg.com/eastafrica/refrigerators/lg-gn-b312pxgb
+- Uganda price/image evidence: https://www.jumia.ug/lg-gn-b312pxgb-315l-top-freezer-refrigerator-smart-inverter-compressor-linearcoolingtmdoorcoolingtm-black2yrs-wrnty-251441576.html
+
+The refrigerator family remains open for the next exact-model continuation. TCL P620CD and Beko RDNT271I50S KE have current Uganda-market evidence and OEM specification evidence, but their clean direct image assets must be captured and visually checked before implementation.

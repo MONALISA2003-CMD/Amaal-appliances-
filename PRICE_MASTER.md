@@ -35,3 +35,9 @@ Freezers have been added as the next catalogue capability. Current implementatio
 - Roch RCF-125G-E master price normalized to UGX 477,000 using current Uganda official-store observations around UGX 469,000–484,000.
 - Midea MDRC265FZG43D master price recorded at UGX 800,000 as a medium-confidence local observation while the manufacturer confirms the model is 142L.
 - Midea MDRC362FZG43D master price recorded at UGX 878,000 from the current Uganda Midea Official Store observation.
+
+## Refrigerator continuation — 7 September 2026
+
+| Brand | Model | Product | Master price (UGX) | Confidence | Image evidence |
+|---|---|---|---:|---|---|
+| LG | GN-B312PXGB | 315L Top Freezer Refrigerator | 2,315,000 | High | Clean exact-model Uganda Official Store image + LG East Africa OEM |
