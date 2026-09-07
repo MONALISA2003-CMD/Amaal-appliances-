@@ -41,3 +41,12 @@ Freezers have been added as the next catalogue capability. Current implementatio
 | Brand | Model | Product | Master price (UGX) | Confidence | Image evidence |
 |---|---|---|---:|---|---|
 | LG | GN-B312PXGB | 315L Top Freezer Refrigerator | 2,315,000 | High | Clean exact-model Uganda Official Store image + LG East Africa OEM |
+
+## Current implementation pass price observations
+
+- Beko RDNT271I50S KE — UGX 2,159,000 — Beko Official Store Uganda observation.
+- Beko BCF3316S UK KE — UGX 1,959,000 — Beko Official Store Uganda observation.
+- Beko BAW100 UK — UGX 2,469,000 — Beko Official Store Uganda observation.
+- Midea MDRC265FZG43D — UGX 755,600 — Midea Official Store Uganda observation used for current implementation.
+- Midea MDRC362FZG43D — UGX 877,800 — Midea Official Store Uganda observation used for current implementation.
+- Beko BCF3380 — UGX 2,429,000 — Beko Official Store Uganda observation used for current implementation.

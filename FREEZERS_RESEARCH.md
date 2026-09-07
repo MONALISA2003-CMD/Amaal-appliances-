@@ -29,3 +29,16 @@ Current retailer prices are observations. Amaal stores one normalized master sel
 - Midea MDRC362FZG43D was corrected from an incorrectly labelled 362L capacity to the manufacturer-confirmed 198L net capacity. The official Midea page identifies the model as 198L, with 130–260V wide-voltage tolerance and dimensions 770×560×850 mm.
 - Customer-facing freezer prices remain one normalized UGX master price per exact SKU.
 - The freezer family remains open for additional Samsung, LG, Hisense, ADH, Midea and Beko models and a final visual inspection.
+
+## Newly implemented: Beko BCF3316S UK KE
+- OEM: Beko Kenya official product page
+- Exact model: BCF3316S UK KE
+- Net/gross capacity: 316L
+- Type: Chest freezer
+- Cooling: Static
+- Dimensions: 84.5 × 112 × 70 cm
+- Weight: 42 kg
+- Climate class: T
+- Annual energy consumption at 25°C: 347 kWh/year
+- Uganda market observation: UGX 1,959,000 on Beko Official Store listing
+- Image: direct Beko Kenya OEM image, clean and non-watermarked

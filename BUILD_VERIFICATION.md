@@ -1,25 +1,18 @@
-# Amaal Build Verification — 7 September 2026
+# Build Verification
 
-## Source audits
-- Image audit: PASS — 66/66 direct HTTPS product images with no known watermark markers.
-- Refrigeration audit: PASS — 12 refrigerator/freezer records validated.
-- Duplicate product IDs: 0.
-- Duplicate slugs: 0.
+## Static verification
 
-## TypeScript verification
-A source-level TypeScript check was run with the globally available TypeScript compiler. It produced only unresolved dependency/type-runtime errors because this working environment does not contain `node_modules` and dependency installation is unavailable. No additional source-level TypeScript diagnostics were produced for the changed files.
+- Product records: 69
+- Duplicate IDs: 0
+- Duplicate slugs: 0
+- Duplicate models: 0
+- Image audit: PASS 69/69
+- Refrigeration audit: PASS 14 records
+- New implementation images: OEM direct Beko Kenya URLs only
+- Existing products: retained, none removed
 
-The dependency errors were:
-- missing Next.js/React packages
-- missing project path-resolved modules because dependencies/types are not installed
+## Local production build
 
-A full `next build` must therefore be run by Vercel or an environment with the project's dependencies installed.
+A complete Next.js production build cannot be executed in this stripped working environment because `node_modules` is not present. Running `npx tsc --noEmit` therefore reports missing dependency/type packages such as `next`, `react`, and `lucide-react`; these are environment dependency errors, not a source-level build result.
 
-## ZIP verification
-The final ZIP was created from the application root and must pass `unzip -t` before delivery.
-
-## Important project constraint
-Existing products are retained. No catalogue SKU was removed.
-
-## Image constraint
-Only clean direct HTTPS product images already passing the project's automated image gate are retained or added. Watermarked, seller-branded, promotional or wrong-model imagery is not substituted for missing research.
+Run `npm ci` followed by `npm run build` in CI/Vercel for the authoritative production build.

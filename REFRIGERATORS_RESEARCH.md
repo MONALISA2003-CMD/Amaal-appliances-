@@ -55,3 +55,14 @@ The current implementation adds five refrigerator SKUs where the exact model ide
 - Uganda price/image evidence: https://www.jumia.ug/lg-gn-b312pxgb-315l-top-freezer-refrigerator-smart-inverter-compressor-linearcoolingtmdoorcoolingtm-black2yrs-wrnty-251441576.html
 
 The refrigerator family remains open for the next exact-model continuation. TCL P620CD and Beko RDNT271I50S KE have current Uganda-market evidence and OEM specification evidence, but their clean direct image assets must be captured and visually checked before implementation.
+
+## Newly implemented: Beko RDNT271I50S KE
+- OEM: Beko Kenya official product page
+- Exact model: RDNT271I50S KE
+- Total gross: 271L; total net: 250L
+- Fresh food net: 182L; frozen food net: 68L
+- Cooling: No Frost / NeoFrost Dual Cooling
+- Features verified: Active Odour Filter, CoolRoom, LED illumination, Vacation Mode, Twist & Serve ice tray
+- Dimensions: 165 × 54 × 60 cm
+- Uganda market observation: UGX 2,159,000 on Beko Official Store listing
+- Image: direct Beko Kenya OEM image, clean and non-watermarked
