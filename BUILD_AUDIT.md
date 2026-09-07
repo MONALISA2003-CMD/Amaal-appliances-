@@ -33,3 +33,24 @@ npm run build
 
 ## Important image qualification
 The automated image audit checks URL-level signals. It does **not** prove that every possible visible watermark is absent from the pixels. Visual image inspection remains part of the research workflow and must be completed whenever a source cannot guarantee a clean image.
+
+
+## Refrigerator build audit
+- Catalogue count after this build: 53.
+- Refrigerator records added: 5.
+- Every added refrigerator has a direct image URL and master UGX price.
+- Added image hosts: `www.lg.com`, `images.samsung.com`.
+- Exact-model/local evidence is recorded in `REFRIGERATORS_RESEARCH.md`.
+- Refrigerator family is intentionally **not yet marked complete**; TCL and Beko image verification and broader model expansion remain.
+
+## Refrigeration quality gate — 7 September 2026
+- Total catalogue: 59 products.
+- Refrigerators: 5 records.
+- Freezers: 6 records.
+- 59 unique IDs and 59 unique slugs.
+- Automated image URL audit passed for all 59 records.
+- Dedicated refrigeration audit passed for all 11 refrigerator/freezer records.
+- Refrigeration records now reject 150×150 image transforms and unqualified "local observation" warranty wording.
+- Midea MDRC265FZG43D is recorded as 142L, matching Midea Africa manufacturer documentation.
+- Midea MDRC362FZG43D is recorded as 198L, matching Midea Africa manufacturer documentation.
+- The refrigeration families are **not marked complete** until the remaining agreed brands/models, price observations and visual image review are completed.

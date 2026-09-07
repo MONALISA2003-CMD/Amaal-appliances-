@@ -4,10 +4,10 @@
 This file is the living handover document. Update it after every substantial build/research cycle. Do not use numbered phases as the project history. Use capability names so future ZIPs remain understandable.
 
 ## Current build snapshot
-- Catalogue records currently in this starting repository: **48**.
-- Unique product IDs: **48**.
-- Unique slugs: **48**.
-- Product image URLs: **48**.
+- Catalogue records currently in this repository: **53**.
+- Unique product IDs: **53**.
+- Unique slugs: **53**.
+- Product image URLs: **53**.
 - Every current record has a UGX master price field.
 - Product detail routes exist for every current slug.
 - Shop, search, brand navigation and category navigation are wired.
@@ -82,5 +82,30 @@ The current data set is only the existing researched foundation. Continue the br
 - Broken-link and remote-image health checks.
 - Full visual image watermark audit.
 
+## Latest catalogue continuation: Refrigerators
+- Added five verified refrigerator SKUs across LG, Samsung, Midea, Roch and ADH.
+- Added the `Refrigerators` category to the typed catalogue and shop filters.
+- Added manufacturer/local research provenance and image-clean metadata to the new records.
+- Added LG and Samsung image hosts to the Next.js image allow-list.
+- Added `REFRIGERATORS_RESEARCH.md` for the living refrigerator research trail.
+
+## What remains in Refrigerators
+- TCL expansion with direct model-matched images.
+- More LG, Samsung, Midea, Roch and ADH models.
+- Beko direct image verification.
+- Visual watermark review for every refrigerator image.
+- Final refrigerator price and specification audit.
+
 ## Next continuation target
-Build the catalogue as a complete, reusable commerce frontend first, while keeping backend ownership and integration boundaries explicit. Every new ZIP should update this file rather than creating another numbered status file.
+Finish the refrigerator family to the agreed brand scope before moving to Freezers. Keep backend ownership and integration boundaries explicit. Every new ZIP should update this file rather than creating another numbered status file.
+
+
+## Brand identity implementation
+The landing page and Brands directory now use the central `lib/brand-registry.ts`. Every supported Amaal brand is represented in the brand grid. `BrandLogo` prefers sourced brand assets, falls back safely when an asset cannot load, and keeps the brand name visible. The same component is used in brand browsing and product cards.
+
+
+## Freezers continuation
+Freezers have been added as the next catalogue capability. Current implementation contains exact-model Uganda observations for Hisense, ADH, Midea, Roch and Beko, with Samsung/LG expansion still subject to clean exact-model image and evidence verification.
+
+## Refrigeration gate before moving on
+The refrigerator and freezer families have undergone a dedicated quality correction pass. Do not advance to the next catalogue capability by treating them as complete. Current gate: 5 refrigerators + 6 freezers, 59 total catalogue products, all refrigeration records passing the dedicated audit. Continue refrigeration expansion and visual verification until the agreed brand/model coverage is sufficiently complete.

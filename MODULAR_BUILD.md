@@ -71,3 +71,16 @@ The app retains lightweight CSS design tokens for predictable visual control whi
 - Mobile layout checked.
 - Vercel build passes.
 - Continuation and price documents updated.
+
+
+## Refrigerator module build record
+The refrigerator addition follows the same modular catalogue contract: exact model identity, typed category, normalized master price, structured specifications, feature list, availability, confidence and image provenance. Refrigerator research is isolated in `REFRIGERATORS_RESEARCH.md` so the product data remains usable by the generic commerce UI without embedding research logic into components.
+
+The generic `ProductCard`, product detail route, search, category filter, brand filter and cart require no refrigerator-specific UI branch. This is intentional: a new product family should be data-driven rather than creating another duplicated storefront implementation.
+
+## Brand Identity System
+The landing page is the canonical visual brand directory for the catalogue. Every supported Amaal brand is represented by a brand tile and links into its catalogue view. Brand assets are maintained in `lib/brand-registry.ts` and rendered through `components/catalogue/BrandLogo.tsx`, so brand identity is not duplicated across pages. Official brand assets are preferred; verified fallback assets are used only where an official web-download asset is not reliably exposed; text fallback remains available for brands without a usable sourced asset. Logos must never be stretched, recoloured, redrawn, or presented as Amaal-owned marks.
+
+
+## Freezers continuation
+Freezers have been added as the next catalogue capability. Current implementation contains exact-model Uganda observations for Hisense, ADH, Midea, Roch and Beko, with Samsung/LG expansion still subject to clean exact-model image and evidence verification.

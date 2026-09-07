@@ -102,3 +102,7 @@ The browser may display a price, but production checkout must re-read the author
 
 ## Non-goals in this temporary repository
 No claim is made that payment processing, live inventory, authentication, fulfilment, server-side orders or a production database are already complete. The frontend is deliberately being built so those systems can be connected without redesigning the customer journey.
+
+
+## Freezers continuation
+Freezers have been added as the next catalogue capability. Current implementation contains exact-model Uganda observations for Hisense, ADH, Midea, Roch and Beko, with Samsung/LG expansion still subject to clean exact-model image and evidence verification.

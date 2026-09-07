@@ -2,7 +2,7 @@
   "name": "amaal-commerce-catalogue",
   "version": "0.2.0",
   "private": true,
-  "scripts": {"dev":"next dev","build":"next build","start":"next start","lint":"eslint .","audit:images":"node scripts_image_audit.mjs"},
+  "scripts": {"dev":"next dev","build":"next build","start":"next start","lint":"eslint .","audit:images":"node scripts_image_audit.mjs","audit:refrigeration":"node scripts_refrigeration_audit.mjs"},
   "dependencies": {
     "@hookform/resolvers":"^5.2.1",
     "@radix-ui/react-slot":"^1.2.3",

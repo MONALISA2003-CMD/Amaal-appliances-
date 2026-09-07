@@ -1,6 +1,9 @@
 import type { NextConfig } from 'next';
 const nextConfig: NextConfig = { images: { remotePatterns: [
   { protocol:'https', hostname:'upload.wikimedia.org' },
+  { protocol:'https', hostname:'www.lg.com' },
+  { protocol:'https', hostname:'cdn.simpleicons.org' },
+  { protocol:'https', hostname:'images.samsung.com' },
   { protocol:'https', hostname:'images.philips.com' },
   { protocol:'https', hostname:'www.tilyexpress.ug' },
   { protocol:'https', hostname:'i0.wp.com' },

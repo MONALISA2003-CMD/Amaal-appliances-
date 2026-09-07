@@ -48,3 +48,14 @@ A URL-level pass must never be described as proof of visual watermark-free statu
 
 ## Build discipline
 Every research addition should leave a trace in the product record: model, source, confidence and image provenance. This keeps future catalogue expansion auditable instead of turning into an untraceable pile of copied listings.
+
+
+## Refrigerator research standard
+For refrigerators, model identity is checked against manufacturer information where available and against an exact Uganda listing before a SKU is promoted into the storefront. Image acceptance requires a model-matched product photograph, HTTPS delivery, no visible retailer watermark or seller contact overlay, and a source trace in the product record. When those conditions cannot be established, the model remains a research candidate instead of receiving a guessed image.
+
+## Brand Logo Sourcing Standard
+Amaal uses official brand identity assets wherever a brand publishes a usable web asset. LG, Samsung, Midea and Philips have official brand-identity/media guidance that must be respected, including proportions, clear space and colour treatment. Where an official downloadable asset is not reliably exposed, the brand registry may use a clean verified fallback while retaining the official brand/source URL for future asset replacement. No logo may be fabricated or materially altered.
+
+
+## Freezers continuation
+Freezers have been added as the next catalogue capability. Current implementation contains exact-model Uganda observations for Hisense, ADH, Midea, Roch and Beko, with Samsung/LG expansion still subject to clean exact-model image and evidence verification.
