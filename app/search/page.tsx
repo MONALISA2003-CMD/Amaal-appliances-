@@ -1,0 +1,2 @@
+import {searchProducts} from '@/lib/catalogue'; import {ProductGrid} from '@/components/catalogue/ProductGrid';
+export default async function SearchPage({searchParams}:{searchParams:Promise<{q?:string}>}){const {q=''}=await searchParams; const results=searchProducts(q); return <main className="section"><div className="container"><div className="eyebrow">Search</div><h1>{q?`Results for “${q}”`:'Search Amaal'}</h1><p className="muted">{results.length} products found.</p><div style={{marginTop:24}}><ProductGrid products={results}/></div></div></main>}

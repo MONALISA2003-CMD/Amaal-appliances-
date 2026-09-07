@@ -1,0 +1,2 @@
+import Link from 'next/link'; import {brands} from '@/data/products';
+export default function Brands(){return <main className="section"><div className="container"><div className="eyebrow">Catalogue</div><h1>Brands</h1><p className="muted">Explore the appliance and consumer-audio brands currently curated for this Amaal sub-application.</p><div className="grid brand-grid" style={{marginTop:30}}>{brands.map(b=><Link className="brand-card" href={`/shop?brand=${encodeURIComponent(b)}`} key={b}><strong>{b}</strong><p className="muted">View products</p></Link>)}</div></div></main>}
