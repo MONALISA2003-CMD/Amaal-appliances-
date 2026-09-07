@@ -1,0 +1,17 @@
+name: Amaal ZIP Extractor
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test Amaal workflow
+        run: |
+          echo "Amaal workflow is working."
+          echo "GitHub Actions successfully detected this workflow."
