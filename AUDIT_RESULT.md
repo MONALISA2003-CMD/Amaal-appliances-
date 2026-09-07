@@ -1,23 +1,22 @@
-# Amaal ZIP Audit Result
+# Amaal Appliances — Dryers Audit Result
 
-Date: 7 September 2026
+## Result
+DRYERS IMPLEMENTATION PASS — IN PROGRESS
 
-## Checks performed
+The fourth roadmap category has been implemented incrementally without removing existing catalogue records.
 
-- ZIP archive integrity checked with `unzip -t`: PASS.
-- Catalogue record count: 65.
-- Duplicate product IDs: none.
-- Duplicate slugs: none.
-- Duplicate models: none.
-- Image URL presence: 65/65.
-- Image audit script: PASS (65/65).
-- Refrigeration audit script: PASS (11 records).
-- Fixed TypeScript category mismatch: `Washing Machines` is now included in `Category`.
+## Implemented SKUs
+1. Beko B3T4911DG — 9kg condenser dryer
+2. Samsung DV90TA040AX/EU — 9kg heat pump dryer
+3. Midea MD110H80/T-UY — 8kg heat pump dryer
 
-## Build blocker fixed
+## Evidence
+- Exact model OEM evidence recorded for all three.
+- Uganda price evidence recorded for all three.
+- Images were visually inspected and selected as clean exact-model images without visible watermarks, seller phone numbers or promotional banners.
 
-`data/products.ts` contains six products with `category: 'Washing Machines'`, while `types/product.ts` previously omitted that literal from `Category`. The union has been corrected.
+## Category status
+The category remains IN PROGRESS because the master scope also names LG and Hisense for dryers. Their exact-model evidence/image/price alignment remains open for the next research pass.
 
-## Local build limitation
-
-The supplied environment does not have the project's npm dependencies installed, and dependency installation could not complete within the execution environment. Therefore a full local `next build` could not be executed here. The source-level blocker reported by the supplied Vercel build has been fixed, and the final ZIP was re-tested for archive integrity.
+## Existing catalogue
+No existing SKU was removed.

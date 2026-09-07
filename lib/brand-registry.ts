@@ -20,6 +20,7 @@ export const brandRegistry: BrandRegistryItem[] = [
   { name:'ADH', logo:simple('adh'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'appliances' },
   { name:'Roch', logo:simple('roch'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'appliances' },
   { name:'Midea', logo:simple('midea'), source:'official', sourceUrl:'https://brandbook.midea.com/guidelines/visual-identity/brand-elements/logo', category:'appliances' },
+  { name:'Newmatic', logo:simple('newmatic'), source:'verified-fallback', sourceUrl:'https://www.newmatic-appliances.com/', category:'appliances' },
   { name:'Beko', logo:simple('beko'), source:'verified-fallback', sourceUrl:'https://www.bekocorporate.com/company/press-room/logos/beko/', category:'appliances' },
   { name:'SPJ', logo:simple('spj'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'appliances' },
   { name:'Saachi', logo:simple('saachi'), source:'verified-fallback', sourceUrl:'https://www.saachi.com/', category:'small-appliances' },

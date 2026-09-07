@@ -50,3 +50,40 @@ Freezers have been added as the next catalogue capability. Current implementatio
 - Midea MDRC265FZG43D — UGX 755,600 — Midea Official Store Uganda observation used for current implementation.
 - Midea MDRC362FZG43D — UGX 877,800 — Midea Official Store Uganda observation used for current implementation.
 - Beko BCF3380 — UGX 2,429,000 — Beko Official Store Uganda observation used for current implementation.
+
+
+## Dryers implementation — 7 September 2026
+- Beko B3T4911DG — UGX 2,384,000 — Beko Official Store Uganda exact-model observation — High confidence.
+- Samsung DV90TA040AX/EU — UGX 3,150,000 — exact-model Uganda retailer observation — High confidence.
+- Midea MD110H80/T-UY — UGX 1,740,000 — exact-model Uganda retailer observation — High confidence.
+
+
+## Cookers implementation — 7 September 2026
+- ADH AGC-531GE — UGX 695,000 — current Uganda retailer observations; High confidence for local model/price evidence.
+- Saachi NL-6361HP — UGX 387,700 — Saachi Manufacturers Official Store on Jumia Uganda; High confidence for local model/price evidence.
+
+
+## Cookers additions — 7 September 2026
+
+- Saachi NL-GAS-6364SS — UGX 1,125,000 — Saachi Manufacturers Official Store / Jumia Uganda — High confidence.
+- Saachi NL-GAS-6364RD — UGX 1,105,000 — Saachi Manufacturers Official Store / Jumia Uganda — High confidence.
+- Global Star KZ-560(2+2) Black — research observation UGX 680,000 at Dombelo; not yet implemented because image gate is incomplete.
+
+## Cooker completion pass — 7 September 2026
+- Saachi NL-GAS-6363HP — UGX 525,000 — Dombelo Uganda exact-model observation.
+- Saachi NL-6365HPE — UGX 700,000 — Saachi Manufacturers Official Store on Jumia Uganda.
+- Saachi NL-6366HPE — UGX 750,000 — Saachi Manufacturers Official Store on Jumia Uganda.
+- Midea 60E3G1H4FSL — UGX 1,040,000 — TilyExpress Uganda exact-model observation.
+- Hisense HF631GEES — UGX 1,195,000 — TilyExpress Uganda exact-model observation.
+- Global Star KZ-560(3+1) — UGX 680,000 — Dombelo Uganda exact-model observation.
+
+## Ovens implementation — 7 September 2026
+- Newmatic FM6113T — UGX 2,800,000 — Newmatic Kitchen Appliances Uganda / Jumia exact-model listing — High confidence.
+- Newmatic FE633 — UGX 1,600,000 — Newmatic Kitchen Appliances Uganda / Jumia exact-model listing — High confidence.
+- Midea MBO-M1865 — UGX 850,000 — Kanta Uganda Official Midea Store exact-product listing — High confidence.
+
+## Ovens — Budget Expansion
+- Hisense HBO60203 — UGX 730,000
+- Hisense HBO60202 — UGX 640,000
+- Midea 65M60M1 — UGX 765,000
+- Midea 65M40M1-GL — UGX 785,000
