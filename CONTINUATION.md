@@ -109,3 +109,7 @@ Freezers have been added as the next catalogue capability. Current implementatio
 
 ## Refrigeration gate before moving on
 The refrigerator and freezer families have undergone a dedicated quality correction pass. Do not advance to the next catalogue capability by treating them as complete. Current gate: 5 refrigerators + 6 freezers, 59 total catalogue products, all refrigeration records passing the dedicated audit. Continue refrigeration expansion and visual verification until the agreed brand/model coverage is sufficiently complete.
+
+
+## Washing Machines continuation
+Initial washing-machine capability added after refrigeration quality gate. Coverage remains open for additional verified models and visual image audit.
