@@ -25,7 +25,7 @@ export function ProductCard({product}:{product:Product}){
       </div>
       <Link href={`/product/${product.slug}`} className="product-title">{product.name}</Link>
       <div className="model">Model {product.model}</div>
-      <div className="price">{formatUGX(product.price)}</div>
+      <div className="price">{product.availability === 'price-coming-soon' ? 'Price coming soon' : formatUGX(product.price)}</div>
       <div className="product-actions"><AddToCartButton product={product}/><Link className="btn secondary" href={`/product/${product.slug}`}>Details</Link></div>
     </div>
   </article>

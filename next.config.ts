@@ -2,6 +2,8 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
+    // Remote catalogue images are rendered directly in the browser. This avoids the Next.js 50-pattern ceiling while preserving all researched image URLs.
+    unoptimized: true,
     remotePatterns: [
       { protocol: 'https', hostname: 'aksesore.al' },
       { protocol: 'https', hostname: 'ambulantenligne.com' },
