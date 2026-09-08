@@ -54,3 +54,13 @@ The automated image audit checks URL-level signals. It does **not** prove that e
 - Midea MDRC265FZG43D is recorded as 142L, matching Midea Africa manufacturer documentation.
 - Midea MDRC362FZG43D is recorded as 198L, matching Midea Africa manufacturer documentation.
 - The refrigeration families are **not marked complete** until the remaining agreed brands/models, price observations and visual image review are completed.
+
+
+## 8 September 2026 continuation
+- Verified supplied baseline at 150 products before edits.
+- Added 7 unique products; final catalogue is 157.
+- No existing IDs, slugs, models or images were removed/changed.
+- Catalogue and image URL audits pass at 157.
+- Actual image hosts are 62; configured remotePatterns remain 50; `images.unoptimized=true`.
+- The requested <=50 actual-host consolidation target remains open.
+- No production build is claimed because dependencies are not installed.

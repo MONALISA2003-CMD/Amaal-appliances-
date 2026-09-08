@@ -112,3 +112,13 @@ Freezers have been added as the next catalogue capability. Current implementatio
 - Globalstar F20MXP08: UGX 199,000
 - Saachi NL-MO-6109-BK: UGX 260,000
 - Blueflame 2026 Mirror Series: UGX 205,000
+
+
+## Continuation pass — 8 September 2026
+- Hisense HS2100 — UGX 520,000 — Bayet Uganda exact-model observation; Hisense OEM specification.
+- Hisense AX5100Q — UGX 880,000 — Jumia Uganda exact-model observation; Hisense OEM specification.
+- LG S65TR — UGX 1,110,000 — Jumia Uganda exact-model observation; LG Africa OEM specification.
+- Kenwood ZJM01 — UGX 205,700 — Kenwood Official Store on Jumia Uganda.
+- Geepas GK5454N — UGX 66,000 — Geepas Official Store on Jumia Uganda; Geepas specification cross-check.
+- Geepas GAC9576 — UGX 540,000 — Jumia Uganda exact-model observation.
+- Geepas GRH28530 — UGX 235,000 — Jumia Uganda exact-model observation.

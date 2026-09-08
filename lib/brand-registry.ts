@@ -13,6 +13,7 @@ export type BrandRegistryItem = {
 const simple = (slug: string) => `https://cdn.simpleicons.org/${slug}`;
 
 export const brandRegistry: BrandRegistryItem[] = [
+  { name:'JBL', logo:simple('jbl'), source:'verified-fallback', sourceUrl:'https://www.jbl.com/', category:'audio' },
   { name:'LG', logo:'https://www.lg.com/content/dam/lge/global/brand/brand-logo/lg_logo.svg', source:'official', sourceUrl:'https://www.lg.com/global/our-identity/', category:'appliances' },
   { name:'Samsung', logo:'https://images.samsung.com/is/image/samsung/assets/global/about-us/brand/logo/pc/720_120_logo.png', source:'official', sourceUrl:'https://www.samsung.com/us/about-us/brand-identity/logo/', category:'appliances' },
   { name:'TCL', logo:simple('tcl'), source:'verified-fallback', sourceUrl:'https://www.tcl.com/global/en/tcl-design', category:'appliances' },
@@ -40,6 +41,7 @@ export const brandRegistry: BrandRegistryItem[] = [
   { name:'Philips', logo:simple('philips'), source:'official', sourceUrl:'https://www.philips.com/a-w/about/news/media-library/2024-Philips-Wordmark.html', category:'small-appliances' },
   { name:'Sonashi', logo:simple('sonashi'), source:'verified-fallback', sourceUrl:'https://www.sonashi.com/', category:'small-appliances' },
   { name:'Pixel', logo:simple('pixel'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'small-appliances' },
+  { name:'Scarlett', logo:simple('scarlett'), source:'official', sourceUrl:'https://www.scarlett.ru/', category:'small-appliances' },
   { name:'Oraimo', logo:simple('oraimo'), source:'verified-fallback', sourceUrl:'https://www.oraimo.com/', category:'audio' },
   { name:'Sayona', logo:simple('sayona'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },
   { name:'Zealot', logo:simple('zealot'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },

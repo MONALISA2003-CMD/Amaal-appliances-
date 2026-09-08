@@ -113,3 +113,30 @@ The refrigerator and freezer families have undergone a dedicated quality correct
 
 ## Washing Machines continuation
 Initial washing-machine capability added after refrigeration quality gate. Coverage remains open for additional verified models and visual image audit.
+
+
+## Continuation pass — 8 September 2026
+### Baseline and preservation
+- Supplied ZIP was verified at 150 product records before edits.
+- A complete 150-row baseline inventory was created in `BASELINE_150_INVENTORY.md`.
+- All 150 original product IDs, slugs, models and image URLs remain present and unchanged.
+- Seven new unique SKUs were added, giving an expected final catalogue count of 157.
+
+### Added capabilities
+- Consumer Audio: Hisense HS2100, Hisense AX5100Q, LG S65TR.
+- Electric Kettles: Kenwood ZJM01, Geepas GK5454N.
+- Home Comfort: Geepas GAC9576, Geepas GRH28530.
+- Ironing Machines taxonomy was added but no product was inserted without a compliant image URL.
+- Quick Cooking & Frying, Fans, Cleaning & Floor Care and Ironing Machines have research files documenting exact candidates and held products.
+
+### Quality gate
+- Catalogue audit: PASS — 157 products.
+- Image URL audit: PASS — 157 direct HTTPS URLs.
+- Duplicate ID/slug/model/fingerprint audit: PASS.
+- Existing-product preservation diff: PASS — zero removals and zero existing image changes.
+- TypeScript data-model syntax was checked with global `tsc`; repository-wide type checking remains blocked by missing installed dependencies (`next`, React and other packages).
+- `npm run build` was not claimed because dependencies are not installed.
+- `unzip -t` passes on the packaged ZIP.
+
+### Image-host gate
+The supplied 150-product baseline already uses 56 distinct actual image hosts while `next.config.ts` allow-lists 50. The repository's `images.unoptimized = true` setting means the 50-pattern ceiling is not used for browser rendering, but the user's requested target of <=50 actual hosts is not yet met. This continuation deliberately does not claim that host-consolidation gate as passed.

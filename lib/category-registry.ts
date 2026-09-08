@@ -24,12 +24,13 @@ export const categoryRegistry: Category[] = [
   { name:'Cooker Hoods', slug:'cooker-hoods', description:'Kitchen extraction hoods with verified dimensions and extraction specifications.', brands:['Newmatic','Beko','Hisense','Midea','Blueflame'], status:'active' },
   { name:'Microwaves', slug:'microwaves', description:'Solo and combination microwave ovens with exact model verification.', brands:['Samsung','LG','Midea','Beko','Kenwood','Geepas','Saachi','ADH','Globalstar','Blueflame','Oraimo'], status:'active' },
   { name:'Cleaning & Floor Care', slug:'cleaning-floor-care', description:'Vacuum cleaners, floor-care and practical home-cleaning appliances.', brands:['Samsung','LG','ADH','Hisense','Midea','Saachi'], status:'research-pending' },
-  { name:'Home Comfort', slug:'home-comfort', description:'Air conditioners and other household comfort appliances.', brands:['Samsung','LG','TCL','ADH','Midea','Saachi','Beko','Chiq'], status:'research-pending' },
-  { name:'Fans', slug:'fans', description:'Household fans with a maximum of 30 verified actual SKUs.', brands:['Samsung','LG','TCL','ADH','Midea','Saachi','Beko','Chiq'], status:'research-pending' },
-  { name:'Small Kitchen Appliances', slug:'small-kitchen-appliances', description:'Kettles, rice cookers, coffee makers and everyday countertop appliances.', brands:['Hoffmans','RAF','Midea','Saachi','Geepas'], status:'active' },
+  { name:'Home Comfort', slug:'home-comfort', description:'Air conditioners and other household comfort appliances.', brands:['Samsung','LG','TCL','ADH','Midea','Saachi','Beko','Chiq','Geepas'], status:'active' },
+  { name:'Fans', slug:'fans', description:'Household fans with a maximum of 30 verified actual SKUs.', brands:['Samsung','LG','TCL','ADH','Midea','Saachi','Beko','Chiq','Geepas'], status:'active' },
+  { name:'Small Kitchen Appliances', slug:'small-kitchen-appliances', description:'Kettles, rice cookers, coffee makers and everyday countertop appliances.', brands:['Hoffmans','RAF','Midea','Saachi','Geepas','Pixel','Scarlett'], status:'active' },
   { name:'Blenders & Juicers', slug:'blenders-juicers', description:'Blenders, grinders, juice extractors and slow juicers.', brands:['Hoffmans','RAF','Geepas','Saachi','Philips','Sonashi'], status:'active' },
   { name:'Quick Cooking & Frying', slug:'quick-cooking-frying', description:'Air fryers, pressure cookers, hot plates and fast countertop cooking.', brands:['Hoffmans','RAF','Saachi','Sayona','Sonashi','Pixel'], status:'active' },
-  { name:'Consumer Audio', slug:'consumer-audio', description:'Portable speakers, soundbars, headphones, earbuds and affordable home audio.', brands:['Oraimo','Sayona','Geepas','Saachi','Zealot','Porodo','Xdobo','Sonashi','QCY','Hoco','Kisonli','Havit','Fantech','Logitech','Creative','Lenovo'], status:'active' },
+  { name:'Consumer Audio', slug:'consumer-audio', description:'Portable speakers, soundbars, headphones, earbuds and affordable home audio.', brands:['JBL','Oraimo','Sayona','Geepas','Saachi','Zealot','Porodo','Xdobo','Sonashi','QCY','Hoco','Kisonli','Havit','Fantech','Logitech','Creative','Lenovo','Hisense','Samsung','LG'], status:'active' },
+  { name:'Ironing Machines', slug:'ironing-machines', description:'Steam irons, dry irons, garment steamers and steam-generator ironing systems.', brands:['Philips','Kenwood','Geepas','Saachi','Sonifer','Hoffmans','RAF','Sayona','Midea','Bosch','Beko'], status:'research-pending' },
 ];
 
 export const categoryNames = categoryRegistry.map((category) => category.name);
