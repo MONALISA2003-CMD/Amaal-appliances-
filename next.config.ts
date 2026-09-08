@@ -41,6 +41,7 @@ const nextConfig: NextConfig = { images: { remotePatterns: [
   { protocol:'https', hostname:'www.midea.com' },
   { protocol:'https', hostname:'www.instok.co.ke' },
   { protocol:'https', hostname:'www.dombelo.com' },
+  { protocol:'https', hostname:'www.kenyatronics.com' },
   { protocol:'https', hostname:'static-data2.manualslib.com' },
   { protocol:'https', hostname:'newmaticug.com' },
   { protocol:'https', hostname:'newmatic.com' },
@@ -48,5 +49,8 @@ const nextConfig: NextConfig = { images: { remotePatterns: [
   { protocol:'https', hostname:'media.abanista.com' },
   { protocol:'https', hostname:'global.hisense.com' },
   { protocol:'https', hostname:'hisense.co.za' },
+  { protocol:'https', hostname:'ambulantenligne.com' },
+  { protocol:'https', hostname:'capital.munoclub.com' },
+  { protocol:'https', hostname:'z.nooncdn.com' },
 ] } };
 export default nextConfig;

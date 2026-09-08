@@ -87,3 +87,28 @@ Freezers have been added as the next catalogue capability. Current implementatio
 - Hisense HBO60202 — UGX 640,000
 - Midea 65M60M1 — UGX 765,000
 - Midea 65M40M1-GL — UGX 785,000
+
+
+## Hobs — 2026-09-08
+| Brand | Model | Category | Master Price (UGX) | Local evidence |
+|---|---|---|---:|---|
+| Midea | MC-ID3591-A2 | Hobs | 450000 | Abanista / Shipto / Life Stores / TilyExpress |
+| Hisense | HHU60GAGR | Hobs | 580000 | Kanta / Abanista / TilyExpress / Prime / Dombelo |
+| Midea | 60M31SA021 | Hobs | 700000 | Abanista / TilyExpress |
+| Hisense | HGH951SS01 | Hobs | 750000 | Capital Appliances / Abanista / Kibuga / Dombelo / Jumia / Duuka |
+
+
+## Microwaves — 8 September 2026
+| Brand | Model | Category | Master Price (UGX) | Local evidence |
+|---|---|---|---:|---|
+| Midea | EM7P012MZ-B | Microwaves | 315000 | Nabellas Uganda; Midea official specifications |
+| Samsung | ME731K-B | Microwaves | 390000 | Uganda market observation; Samsung Africa official model |
+| Kenwood | MWM30.000BK | Microwaves | 770000 | Dombelo / Abanista Uganda |
+| Beko | BMO390 UK | Microwaves | 1000000 | Abanista Uganda; Beko Kenya official model |
+
+
+### Microwaves budget-brand additions
+- ADH AMD20 (E20G): UGX 197,000
+- Globalstar F20MXP08: UGX 199,000
+- Saachi NL-MO-6109-BK: UGX 260,000
+- Blueflame 2026 Mirror Series: UGX 205,000
