@@ -45,3 +45,14 @@ Existing catalogue models were checked before insertion. Different seller listin
 
 ## Image rule
 Only direct HTTPS image URLs were used for implemented products. Watermarked/seller-contact images were held back.
+
+## Expansion Pass 3 — 2026-09-08
+
+### Accepted
+- RAF R-7887 — 0.5L, 1000W travel kettle. Dombelo Uganda identifies the exact model, 0.5L capacity, stainless-steel interior, automatic shut-off and boil-dry protection and lists UGX 85,000. Exact clean Dombelo image reused through the existing i0.wp.com image host.
+- RAF R.7945 — 2.5L glass kettle. Dombelo Uganda identifies 1500W, borosilicate glass, LED illumination, automatic shut-off, boil-dry protection and 360° cordless base and lists UGX 97,000. Exact clean Dombelo image reused through the existing i0.wp.com image host.
+- Saachi NL-KT-7743 — 3L stainless steel kettle. QSales identifies the exact model, 3L, 1850–2200W and stainless-steel construction; Uganda listings provide local price evidence around UGX 125,000. Exact clean QSales image used.
+
+### Rejected/held this pass
+- Saachi NL-KT-7767 — strong Uganda model/price evidence, but the clean image source found uses a new image host not currently configured. Not added to avoid exceeding the 50-entry remotePatterns ceiling.
+- RAF R-7887 was accepted only after replacing a non-configured image source with the exact clean Dombelo image on an already configured host.

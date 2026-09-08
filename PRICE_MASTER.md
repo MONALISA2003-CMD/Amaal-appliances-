@@ -122,3 +122,8 @@ Freezers have been added as the next catalogue capability. Current implementatio
 - Geepas GK5454N — UGX 66,000 — Geepas Official Store on Jumia Uganda; Geepas specification cross-check.
 - Geepas GAC9576 — UGX 540,000 — Jumia Uganda exact-model observation.
 - Geepas GRH28530 — UGX 235,000 — Jumia Uganda exact-model observation.
+
+## Electric Kettles — Expansion Pass 3 additions
+- RAF R-7887 — UGX 85,000 — Dombelo Uganda exact-model local listing.
+- RAF R.7945 — UGX 97,000 — Dombelo Uganda exact-model local listing; corroborated by Prime Electronics/TilyExpress Uganda.
+- Saachi NL-KT-7743 — UGX 125,000 — Uganda market evidence (Duukaan/Jumia) with exact model/specification cross-check.
