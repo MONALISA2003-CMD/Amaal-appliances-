@@ -1,0 +1,1 @@
+Image audit passed: 141/141 products have direct HTTPS image URLs with no known watermark markers.
