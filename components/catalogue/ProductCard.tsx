@@ -5,24 +5,14 @@ import {AddToCartButton} from '@/components/commerce/AddToCartButton';
 import {ProductImage} from '@/components/catalogue/ProductImage';
 
 export function ProductCard({product}:{product:Product}){
+  const unavailable=product.availability!=='in-stock';
   return <article className="product-card">
-    <Link href={`/product/${product.slug}`} className="product-media">
-      {product.image ? <ProductImage
-        src={product.image}
-        alt={`${product.brand} ${product.model} product image`}
-        width={520}
-        height={420}
-        sizes="(max-width: 720px) 50vw, (max-width: 1100px) 33vw, 260px"
-        brand={product.brand}
-        model={product.model}
-        style={{width:'100%',height:'100%',objectFit:'contain',objectPosition:'center'}}
-      /> : <div className="product-placeholder"><strong>{product.brand}</strong><span>{product.model}</span></div>}
+    <Link href={`/product/${product.slug}`} className="product-media" aria-label={`View ${product.name}`}>
+      {product.image ? <ProductImage src={product.image} alt={`${product.brand} ${product.model} product image`} width={520} height={420} sizes="(max-width: 720px) 50vw, (max-width: 1100px) 33vw, 260px" brand={product.brand} model={product.model} style={{width:'100%',height:'100%',objectFit:'contain',objectPosition:'center'}}/> : <div className="product-placeholder"><strong>{product.brand}</strong><span>{product.model}</span></div>}
+      <span className={`availability ${unavailable?'is-muted':'is-live'}`}>{unavailable ? (product.availability==='out-of-stock'?'Out of stock':'Price soon') : 'In stock'}</span>
     </Link>
     <div className="product-body">
-      <div className="product-meta">
-        <strong className="product-brand-name">{product.brand}</strong>
-        <span>{product.category}</span>
-      </div>
+      <div className="product-meta"><strong className="product-brand-name">{product.brand}</strong><span>{product.category}</span></div>
       <Link href={`/product/${product.slug}`} className="product-title">{product.name}</Link>
       <div className="model">Model {product.model}</div>
       <div className="price">{product.availability === 'price-coming-soon' ? 'Price coming soon' : formatUGX(product.price)}</div>
