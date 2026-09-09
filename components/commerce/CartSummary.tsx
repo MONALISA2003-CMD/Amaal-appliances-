@@ -8,7 +8,7 @@ import { ProductImage } from '@/components/catalogue/ProductImage';
 export function CartSummary(){
   const {items,setQuantity,removeItem,clear}=useCartStore();
   const subtotal=items.reduce((sum,item)=>sum+item.price*item.quantity,0);
-  if(!items.length) return <div className="empty-state"><div className="empty-icon">🛍</div><h2>Your bag is empty.</h2><p className="muted">Add a product from the catalogue and it will appear here.</p><Link className="btn" href="/shop">Continue shopping <ArrowRight size={16}/></Link></div>;
+  if(!items.length) return <div className="empty-state"><div className="empty-icon">🛍</div><h2>Your bag is empty.</h2><p className="muted">Add something you love and it will appear here.</p><Link className="btn" href="/shop">Continue shopping <ArrowRight size={16}/></Link></div>;
   return <div className="cart-layout"><section className="cart-lines"><div className="cart-section-title"><strong>{items.length} {items.length===1?'item':'items'}</strong><button className="text-button" onClick={clear}>Clear bag</button></div>{items.map(item=><article className="cart-line" key={item.id}>
     <Link href={`/product/${item.slug}`} className="cart-line-image">{item.image?<ProductImage src={item.image} alt={item.name} brand={item.brand} model={item.model} width={160} height={120}/>:<span>{item.brand}</span>}</Link>
     <div className="cart-line-info"><Link href={`/product/${item.slug}`}><strong>{item.name}</strong></Link><span>{item.brand} · {item.model}</span><span className="cart-line-price">{formatUGX(item.price)}</span></div>
