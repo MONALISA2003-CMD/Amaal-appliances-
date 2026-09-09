@@ -13,7 +13,6 @@ export type BrandRegistryItem = {
 const simple = (slug: string) => `https://cdn.simpleicons.org/${slug}`;
 
 export const brandRegistry: BrandRegistryItem[] = [
-  { name:'JBL', logo:simple('jbl'), source:'verified-fallback', sourceUrl:'https://www.jbl.com/', category:'audio' },
   { name:'LG', logo:'https://www.lg.com/content/dam/lge/global/brand/brand-logo/lg_logo.svg', source:'official', sourceUrl:'https://www.lg.com/global/our-identity/', category:'appliances' },
   { name:'Samsung', logo:'https://images.samsung.com/is/image/samsung/assets/global/about-us/brand/logo/pc/720_120_logo.png', source:'official', sourceUrl:'https://www.samsung.com/us/about-us/brand-identity/logo/', category:'appliances' },
   { name:'TCL', logo:simple('tcl'), source:'verified-fallback', sourceUrl:'https://www.tcl.com/global/en/tcl-design', category:'appliances' },
@@ -29,7 +28,6 @@ export const brandRegistry: BrandRegistryItem[] = [
   { name:'Sonifer', logo:simple('sonifer'), source:'verified-fallback', sourceUrl:'https://www.sonashiuae.com/', category:'small-appliances' },
   { name:'Silver Crest', logo:simple('silvercrest'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'small-appliances' },
   { name:'Global Star', logo:simple('globalstar'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'appliances' },
-  { name:'Chiq', logo:simple('chiq'), source:'verified-fallback', sourceUrl:'https://www.chiq.com/', category:'appliances' },
   { name:'RAF', logo:simple('raf'), source:'verified-fallback', sourceUrl:'https://www.raf-china.com/', category:'small-appliances' },
   { name:'Hoffmans', logo:simple('hoffmans'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'small-appliances' },
   { name:'Geepas', logo:simple('geepas'), source:'verified-fallback', sourceUrl:'https://geepas.com/', category:'small-appliances' },
@@ -44,17 +42,8 @@ export const brandRegistry: BrandRegistryItem[] = [
   { name:'Scarlett', logo:simple('scarlett'), source:'official', sourceUrl:'https://www.scarlett.ru/', category:'small-appliances' },
   { name:'Oraimo', logo:simple('oraimo'), source:'verified-fallback', sourceUrl:'https://www.oraimo.com/', category:'audio' },
   { name:'Sayona', logo:simple('sayona'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },
-  { name:'Zealot', logo:simple('zealot'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },
   { name:'Porodo', logo:simple('porodo'), source:'verified-fallback', sourceUrl:'https://porodo.net/', category:'audio' },
   { name:'Xdobo', logo:simple('xdobo'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },
-  { name:'QCY', logo:simple('qcy'), source:'verified-fallback', sourceUrl:'https://www.qcy.com/', category:'audio' },
-  { name:'Hoco', logo:simple('hoco'), source:'verified-fallback', sourceUrl:'https://www.hoco.com/', category:'audio' },
-  { name:'Kisonli', logo:simple('kisonli'), source:'verified-fallback', sourceUrl:'https://www.jumia.ug/', category:'audio' },
-  { name:'Havit', logo:simple('havit'), source:'verified-fallback', sourceUrl:'https://www.prohavit.com/', category:'audio' },
-  { name:'Fantech', logo:simple('fantech'), source:'verified-fallback', sourceUrl:'https://fantechworld.com/', category:'audio' },
-  { name:'Logitech', logo:simple('logitech'), source:'verified-fallback', sourceUrl:'https://www.logitech.com/', category:'audio' },
-  { name:'Creative', logo:simple('creative'), source:'verified-fallback', sourceUrl:'https://www.creative.com/', category:'audio' },
-  { name:'Lenovo', logo:simple('lenovo'), source:'verified-fallback', sourceUrl:'https://www.lenovo.com/', category:'audio' },
 ];
 
 export const brandNames = brandRegistry.map((brand) => brand.name);
