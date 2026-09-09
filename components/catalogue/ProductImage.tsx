@@ -38,7 +38,7 @@ export function ProductImage({src,alt,brand,model,className='',sizes,priority=fa
     priority={priority}
     unoptimized
     className={className}
-    style={style}
+    style={{objectFit:'contain', ...style}}
     onError={() => setMode(mode === 'direct' ? 'proxy' : mode === 'proxy' ? 'external' : 'failed')}
   />;
 }
