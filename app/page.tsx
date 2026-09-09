@@ -72,7 +72,7 @@ export default function Home(){
             const representative = category.representative;
             return <Link key={category.name} href={`/shop?category=${encodeURIComponent(category.name)}`} className="category-card">
             <div className="category-image">
-              {representative ? <ProductImage src={representative.image} alt={representative.name} brand={representative.brand} model={representative.model} width={520} height={300} sizes="(max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw"/> : null}
+              {representative?.image ? <ProductImage src={representative.image} alt={representative.name} brand={representative.brand} model={representative.model} width={520} height={300} sizes="(max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw"/> : null}
             </div>
             <div className="category-top"><span className="category-index">{String(index + 1).padStart(2, '0')}</span><span className="category-count">{category.count} items</span></div>
             <h3>{category.name}</h3>
