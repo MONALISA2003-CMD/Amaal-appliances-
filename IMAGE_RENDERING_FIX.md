@@ -24,3 +24,8 @@ This preserves the original research URLs while making browser rendering much mo
 The catalogue image audit passes for all 276 products: every product has a direct HTTPS image URL.
 
 The production build could not be run in this working container because the archive does not contain installed `node_modules` and package installation timed out. Vercel should run the normal `npm install`/build pipeline on deployment.
+
+
+## v21 additional fallback
+
+If both the original retailer image and Amaal's server-side proxy fail in the browser, ProductImage now falls back to wsrv.nl, an established image cache/resize service. The fallback is only used after the two first attempts fail. wsrv.nl documents URL-based fetching, caching, and WebP output.

@@ -18,9 +18,10 @@ type Props = {
 };
 
 export function ProductImage({src,alt,brand,model,className='',sizes,priority=false,width=520,height=420,style}:Props){
-  const [mode,setMode]=useState<'direct'|'proxy'|'failed'>('direct');
+  const [mode,setMode]=useState<'direct'|'proxy'|'external'|'failed'>('direct');
   const proxySrc = useMemo(() => `/api/image?url=${encodeURIComponent(src)}`, [src]);
-  const activeSrc = mode === 'proxy' ? proxySrc : src;
+  const externalProxySrc = useMemo(() => `https://wsrv.nl/?url=${encodeURIComponent(src)}&output=webp&maxage=30d`, [src]);
+  const activeSrc = mode === 'proxy' ? proxySrc : mode === 'external' ? externalProxySrc : src;
 
   if(mode === 'failed') {
     return <div className={`product-image-fallback ${className}`} role="img" aria-label={`${brand} ${model}`}>
@@ -38,6 +39,6 @@ export function ProductImage({src,alt,brand,model,className='',sizes,priority=fa
     unoptimized
     className={className}
     style={style}
-    onError={() => setMode(mode === 'direct' ? 'proxy' : 'failed')}
+    onError={() => setMode(mode === 'direct' ? 'proxy' : mode === 'proxy' ? 'external' : 'failed')}
   />;
 }
