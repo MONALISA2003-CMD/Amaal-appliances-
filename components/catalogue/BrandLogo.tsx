@@ -9,10 +9,10 @@ type Props = { name: string; size?: 'sm'|'md'|'lg'; className?: string };
 export function BrandLogo({ name, size='md', className='' }: Props) {
   const brand = getBrand(name);
   const [failed, setFailed] = useState(false);
-  const dimensions = size === 'lg' ? { width: 150, height: 52 } : size === 'sm' ? { width: 88, height: 32 } : { width: 120, height: 42 };
-  if (!brand?.logo || failed) return <span className={`brand-logo-fallback ${className}`}>{name}</span>;
+  const dimensions = size === 'lg' ? { width: 220, height: 96 } : size === 'sm' ? { width: 140, height: 64 } : { width: 180, height: 80 };
+  if (!brand?.logo || failed) return null;
   return (
-    <span className={`brand-logo ${className}`} title={name}>
+    <span className={`brand-logo ${className}`} title={name} aria-label={`${name} logo`}>
       <Image
         src={brand.logo}
         alt={`${name} logo`}

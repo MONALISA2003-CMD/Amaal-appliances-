@@ -31,7 +31,7 @@ export default function Brands(){
             <div className="brand-grid">
               {items.map(b => <Link className="brand-card" href={`/shop?brand=${encodeURIComponent(b.name)}`} key={b.name}>
                 <div className="brand-card-logo"><BrandLogo name={b.name} size="lg"/></div>
-                <div className="brand-card-bottom"><strong className="brand-name">{b.name}</strong><span>Shop products →</span></div>
+                
               </Link>)}
             </div>
           </section>
