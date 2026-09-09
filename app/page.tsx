@@ -1,16 +1,15 @@
 import Link from 'next/link';
 import { products } from '@/data/products';
-import { brandRegistry } from '@/lib/brand-registry';
 import { categoryRegistry } from '@/lib/category-registry';
 import { canonicalCategory } from '@/lib/catalogue';
-import { BrandLogo } from '@/components/catalogue/BrandLogo';
 import { ProductGrid } from '@/components/catalogue/ProductGrid';
+import { ProductImage } from '@/components/catalogue/ProductImage';
 
 const liveCategories = categoryRegistry
-  .map(category => ({
-    ...category,
-    count: products.filter(product => canonicalCategory(product.category) === category.name).length,
-  }))
+  .map(category => {
+    const categoryProducts = products.filter(product => canonicalCategory(product.category) === category.name);
+    return { ...category, count: categoryProducts.length, representative: categoryProducts[0] };
+  })
   .filter(category => category.count > 0)
   .sort((a, b) => b.count - a.count);
 
@@ -65,11 +64,14 @@ export default function Home(){
     <section className="section">
       <div className="container">
         <div className="section-head">
-          <div><div className="eyebrow">Browse the collection</div><h2>Shop by category</h2><p className="muted">Only categories with catalogue items are shown here.</p></div>
+          <div><div className="eyebrow">Browse the collection</div><h2>Shop by category</h2><p className="muted">Explore each part of the catalogue at a glance.</p></div>
           <Link href="/shop">View all</Link>
         </div>
         <div className="category-grid category-grid-home">
           {liveCategories.map((category, index) => <Link key={category.name} href={`/shop?category=${encodeURIComponent(category.name)}`} className="category-card">
+            <div className="category-image">
+              {category.representative ? <ProductImage src={category.representative.image} alt={category.representative.name} brand={category.representative.brand} model={category.representative.model} width={520} height={300} sizes="(max-width: 700px) 50vw, (max-width: 1000px) 33vw, 25vw"/> : null}
+            </div>
             <div className="category-top"><span className="category-index">{String(index + 1).padStart(2, '0')}</span><span className="category-count">{category.count} items</span></div>
             <h3>{category.name}</h3>
             <p>{category.description}</p>
@@ -86,22 +88,6 @@ export default function Home(){
           <Link href="/shop">See everything</Link>
         </div>
         <ProductGrid products={picks}/>
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <div className="section-head">
-          <div><div className="eyebrow">Brands</div><h2>Shop by brand</h2><p className="muted">Jump straight to the brands represented in the catalogue.</p></div>
-          <Link href="/brands">All brands</Link>
-        </div>
-        <div className="brand-grid brand-grid-home">
-          {brandRegistry.slice(0, 12).map(brand => <Link key={brand.name} href={`/shop?brand=${encodeURIComponent(brand.name)}`} className="brand-card">
-            <BrandLogo name={brand.name} size="lg"/>
-            <span className="brand-name">{brand.name}</span>
-            <span>Shop {brand.name} →</span>
-          </Link>)}
-        </div>
       </div>
     </section>
 
