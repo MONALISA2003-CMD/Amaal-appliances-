@@ -20,5 +20,5 @@ type Props = {
 export function ProductImage({src,alt,brand,model,className='',sizes,priority=false,width=520,height=420,style}:Props){
   const [failed,setFailed]=useState(false);
   if(failed) return <div className={`product-image-fallback ${className}`} role="img" aria-label={`${brand} ${model}`}> <strong>{brand}</strong><span>{model}</span></div>;
-  return <Image src={src} alt={alt} width={width} height={height} sizes={sizes} priority={priority} className={className} style={style} onError={()=>setFailed(true)}/>;
+  return <Image src={src} alt={alt} width={width} height={height} sizes={sizes} priority={priority} unoptimized className={className} style={style} onError={()=>setFailed(true)}/>;
 }
