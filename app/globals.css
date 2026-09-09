@@ -16,3 +16,38 @@
 @media (max-width:620px){.brand-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.brand-card{min-width:155px;scroll-snap-align:start}}
 .product-brand-name{display:inline-flex;align-items:center;min-height:24px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;background:#fafaf8;color:var(--ink);font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:850}
 .product-image-fallback{width:100%;height:100%;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;text-align:center;color:#999;background:#f5f4f0}.product-image-fallback strong{font-size:20px;color:#444}.product-image-fallback span{font-size:11px}
+
+/* Landing-page structure */
+.hero-home{position:relative}
+.hero-home .hero-copy{max-width:780px}
+.hero-home .hero-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:25px;font-size:12px;font-weight:800}
+.hero-home .hero-links a{border-bottom:1px solid rgba(0,0,0,.18);padding-bottom:3px}
+.hero-note strong{font-size:54px;line-height:1}
+.trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{display:flex;gap:13px;padding:22px 18px 22px 0;border-right:1px solid var(--line)}
+.trust-item:not(:first-child){padding-left:18px}
+.trust-item:last-child{border-right:0}
+.trust-item>span{font-size:10px;color:#aaa;font-weight:850;letter-spacing:.08em}
+.trust-item strong{font-size:12px;display:block}
+.trust-item p{font-size:11px;color:#777;line-height:1.45;margin:4px 0 0}
+.category-grid-home{grid-template-columns:repeat(4,minmax(0,1fr))}
+.category-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.category-count{font-size:10px;color:#999;font-weight:800}
+.closing-section{padding-top:20px;padding-bottom:80px}
+.closing-card{border:1px solid var(--line);border-radius:26px;background:#181817;color:#fff;padding:44px 48px;display:flex;align-items:center;justify-content:space-between;gap:35px}
+.closing-card .eyebrow{color:#aaa}
+.closing-card h2{font-size:clamp(30px,4vw,48px);letter-spacing:-.045em;line-height:1;margin:9px 0 12px;max-width:650px}
+.closing-card p{color:#c4c4bf;line-height:1.6;max-width:620px;margin:0}
+.closing-card .btn{background:#fff;color:#181817;border-color:#fff;white-space:nowrap}
+.site-footer{background:#181817;color:#fff;padding:58px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.1fr;gap:35px;padding-bottom:45px}
+.footer-brand p,.footer-note{color:#aaa;font-size:12px;line-height:1.6;max-width:300px}
+.site-footer .brand-mark{display:inline-block;margin-bottom:12px}
+.site-footer .eyebrow{color:#888;margin-bottom:12px}
+.site-footer a:not(.brand-mark):not(.footer-cta){display:block;color:#c9c9c5;font-size:12px;padding:5px 0}
+.site-footer a:hover{color:#fff}
+.footer-cta{display:inline-block;margin-top:10px;font-size:12px;font-weight:800;color:#fff!important;border-bottom:1px solid #666;padding-bottom:4px}
+.footer-bottom{border-top:1px solid #333;padding-top:18px;display:flex;justify-content:space-between;gap:15px;color:#777;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:1000px){.category-grid-home{grid-template-columns:repeat(3,minmax(0,1fr))}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(n+3){border-top:1px solid var(--line)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.hero-home .hero-links{gap:12px 15px}.hero-note{display:none}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{padding:16px 10px 16px 0}.trust-item:not(:first-child){padding-left:10px}.trust-item:nth-child(odd){border-right:1px solid var(--line)}.trust-item:nth-child(even){border-right:0}.trust-item:nth-child(n+3){border-top:1px solid var(--line)}.category-grid-home{grid-template-columns:1fr 1fr}.category-count{display:none}.closing-card{padding:30px 24px;display:block}.closing-card .btn{margin-top:25px}.footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-brand{grid-column:1/-1}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:5px}}
